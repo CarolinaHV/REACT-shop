@@ -1,0 +1,79 @@
+@import 'vars';
+
+.myorder {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 360px;
+    position: absolute;
+    right: 0;
+    background-color: var(--white);
+    top: 50px;
+    bottom: auto;
+}
+
+.title-container {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.menu {
+    display: none;
+    margin-right: 60px;
+}
+
+.arrow {
+    transform: rotate(180deg);
+    margin-right: 30px;
+    width: 12px;
+}
+
+.myorder-content {
+    display: flex;
+    flex-direction: column;
+}
+
+    .resume {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 20px;
+        align-items: center;
+        background-color: var(--text-input-field);
+        border-radius: 10px;
+        margin-bottom: 30px;
+        padding: 15px 30px;
+    }
+
+    .resume p {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .resume p:nth-child(2) {
+        text-align: end;
+    }
+
+.primary-button {
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: var(--lg);
+    font-weight: bold;
+    height: 55px;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .myorder {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+}

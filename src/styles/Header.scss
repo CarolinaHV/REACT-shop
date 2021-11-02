@@ -1,0 +1,84 @@
+@import 'vars';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    border-bottom: 2px solid var(--very-light-grey);
+}
+.menu {
+    display: none;
+}
+
+.logo_header {
+    width: 120px;
+    margin-right: 25px;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-left ul, .navbar-right ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-left ul li a, .navbar-right ul li a {
+    text-decoration: none;
+    color: var(--very-light-grey);
+    border: 1px solid var(--white);
+    padding: 8px;
+    height: 60px;
+}
+
+.navbar-left ul li a:hover, .navbar-right ul li a:hover {
+    text-decoration: none;
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+    border-radius: 10px;
+}
+
+.navbar-email {
+    color: var(--very-light-grey);
+    margin-right: 10px;
+}
+
+.navbar-shopping-card {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.navbar-shopping-card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    font-size: 0.8em;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+}
+
+@media (max-width: 640px) {
+    nav {
+        align-items: center;
+    }
+    
+    .menu {
+        display: block;
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar-email {
+        display: none;
+    }
+}

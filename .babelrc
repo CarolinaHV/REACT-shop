@@ -1,0 +1,11 @@
+/*Este archivo es donde vamos a agregar la configuracion que vamos a usar
+de los presets que acabamos de agregar*/
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}
